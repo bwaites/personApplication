@@ -1,17 +1,21 @@
 ﻿Imports System.Data.SqlClient
 Imports DatabaseHelper
 Imports System.Drawing
+Imports System.ComponentModel
 Public Class HeaderData
 
 #Region " Private Members "
 
     Private _Id As Guid = Guid.Empty
-    Private _Version As Integer
-    Private _LastUpdated As DateTime
-    Private _Deleted As Boolean
-    Private _IsDirty As Boolean
-    Private _IsNew As Boolean
-    Private _IsSaved As Image = Nothing
+    Private _Version As Integer = 0
+    Private _LastUpdated As DateTime = DateTime.MaxValue
+    Private _Deleted As Boolean = False
+    Private _IsDirty As Boolean = False
+    Private _IsNew As Boolean = True
+    Private _Status As Image = Nothing
+    Private _Success As Image = Nothing
+    Private _Fail As Image = Nothing
+    Private _Empty As Image = Nothing
 
 #End Region
 
@@ -71,12 +75,35 @@ Public Class HeaderData
         End Set
     End Property
 
-    Public ReadOnly Property IsSaved As Image
+    Public Property Status As Image
         Get
-            Return _IsSaved
+            Return _Status
+        End Get
+        Set(value As Image)
+            _Status = value
+        End Set
+    End Property
+
+    <Browsable(False)>
+    Public ReadOnly Property Success As Image
+        Get
+            Return _Success
         End Get
     End Property
 
+    <Browsable(False)>
+    Public ReadOnly Property Fail As Image
+        Get
+            Return _Fail
+        End Get
+    End Property
+
+    <Browsable(False)>
+    Public ReadOnly Property Empty As Image
+        Get
+            Return _Empty
+        End Get
+    End Property
 #End Region
 
 #Region " Private Methods "
@@ -149,7 +176,10 @@ Public Class HeaderData
 
 #Region " Construction "
     Public Sub New()
-        _IsSaved = New Bitmap("images\check.jpg")
+        _Success = New Bitmap("images\check.jpg")
+        _Fail = New Bitmap("images\fail.jpg")
+        _Empty = New Bitmap("images\empty.jpg")
+        _Status = _Empty
     End Sub
 #End Region
 

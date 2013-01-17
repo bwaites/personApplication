@@ -10,4 +10,10 @@ Public Class frmAddressType
         Me.dgvAddressType.DataSource = _addressTypes.List
     End Sub
 
+    Private Sub mnuSave_Click(sender As System.Object, e As System.EventArgs) Handles mnuSave.Click
+        If _addressTypes.IsSavable Then
+            _addressTypes = _addressTypes.Save
+            dgvAddressType.Refresh()
+        End If
+    End Sub
 End Class

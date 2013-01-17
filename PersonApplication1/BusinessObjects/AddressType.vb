@@ -118,8 +118,10 @@ Public Class AddressType
         If result = True Then
             MyBase.IsDirty = False
             MyBase.IsNew = False
+            MyBase.Status = MyBase.Success
+        Else
+            MyBase.Status = MyBase.Fail
         End If
-
         Return Me
     End Function
     Public Function IsSavable() As Boolean

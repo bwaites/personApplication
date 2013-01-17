@@ -61,13 +61,22 @@ Public Class AddressTypeList
         For Each at As AddressType In _List
             If at.IsSavable = True Then
                 at = at.Save()
-                If at.IsDirty = False Then
-
-                End If
+                
             End If
         Next
+        Return Me
     End Function
 
+    Public Function IsSavable() As Boolean
+        Dim result As Boolean = False
+        For Each at As AddressType In _List
+            If at.IsSavable = True Then
+                result = True
+                Exit For
+            End If
+        Next
+        Return result
+    End Function
 #End Region
 
 #Region " Public Events "
