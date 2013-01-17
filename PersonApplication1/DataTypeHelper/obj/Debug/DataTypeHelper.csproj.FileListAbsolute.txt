@@ -1,0 +1,9 @@
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DataTypeHelper\bin\Debug\DataTypeHelper.dll
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DataTypeHelper\bin\Debug\DataTypeHelper.pdb
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DataTypeHelper\obj\Debug\DataTypeHelper.dll
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DataTypeHelper\obj\Debug\DataTypeHelper.pdb
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DataTypeHelper\bin\Debug\DataTypeHelper.dll
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DataTypeHelper\bin\Debug\DataTypeHelper.pdb
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DataTypeHelper\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DataTypeHelper\obj\Debug\DataTypeHelper.dll
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DataTypeHelper\obj\Debug\DataTypeHelper.pdb

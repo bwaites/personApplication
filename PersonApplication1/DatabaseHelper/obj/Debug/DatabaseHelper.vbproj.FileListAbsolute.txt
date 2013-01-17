@@ -1,0 +1,38 @@
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DatabaseHelper\bin\Debug\DatabaseHelper.dll
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DatabaseHelper\bin\Debug\DatabaseHelper.pdb
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DatabaseHelper\bin\Debug\DatabaseHelper.xml
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DatabaseHelper\bin\Debug\ConfigurationHelper.dll
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DatabaseHelper\bin\Debug\ConfigurationHelper.pdb
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DatabaseHelper\bin\Debug\ConfigurationHelper.xml
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.vbprojResolveAssemblyReference.cache
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.Resources.resources
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.vbproj.GenerateResource.Cache
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.dll
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.xml
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.pdb
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\DatabaseHelper\bin\Debug\DatabaseHelper.dll
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\DatabaseHelper\bin\Debug\DatabaseHelper.pdb
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\DatabaseHelper\bin\Debug\DatabaseHelper.xml
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\DatabaseHelper\bin\Debug\ConfigurationHelper.dll
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\DatabaseHelper\bin\Debug\ConfigurationHelper.pdb
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\DatabaseHelper\bin\Debug\ConfigurationHelper.xml
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\DatabaseHelper\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.Resources.resources
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\DatabaseHelper\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\DatabaseHelper\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.dll
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.xml
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.pdb
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\DatabaseHelper.dll
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\DatabaseHelper.pdb
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\DatabaseHelper.xml
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\ConfigurationHelper.dll
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\ConfigurationHelper.pdb
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\ConfigurationHelper.xml
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.Resources.resources
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.dll
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.xml
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.pdb

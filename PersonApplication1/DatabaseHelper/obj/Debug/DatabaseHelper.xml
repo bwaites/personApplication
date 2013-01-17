@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DatabaseHelper
+</name>
+</assembly>
+<members>
+<member name="M:DatabaseHelper.Database.ExecuteNonQuery">
+	<summary>
+ Allows you to add or update the database
+ </summary>
+	<returns>An SQLCommand object which holds the header data values<example></example></returns>
+</member><member name="M:DatabaseHelper.Database.ExecuteQuery">
+	<summary>
+ Retrieves data from a database 
+ </summary>
+	<returns>stores data in a dataset</returns>
+</member><member name="M:DatabaseHelper.Database.#ctor(System.String)">
+	<summary>
+ This method expects the name of the Connection String.
+ </summary>
+	<param name="name">Connection Name</param>
+	<remarks></remarks>
+</member><member name="P:DatabaseHelper.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:DatabaseHelper.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:DatabaseHelper.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

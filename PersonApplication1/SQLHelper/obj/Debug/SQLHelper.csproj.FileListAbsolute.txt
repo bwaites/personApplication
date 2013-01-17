@@ -1,0 +1,14 @@
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\SQLHelper\bin\Debug\SQLHelper.dll
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\SQLHelper\bin\Debug\SQLHelper.pdb
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\SQLHelper\bin\Debug\DataTypeHelper.dll
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\SQLHelper\bin\Debug\DataTypeHelper.pdb
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\SQLHelper\obj\Debug\SQLHelper.csprojResolveAssemblyReference.cache
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\SQLHelper\obj\Debug\SQLHelper.dll
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\SQLHelper\obj\Debug\SQLHelper.pdb
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\SQLHelper\bin\Debug\SQLHelper.dll
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\SQLHelper\bin\Debug\SQLHelper.pdb
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\SQLHelper\bin\Debug\DataTypeHelper.dll
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\SQLHelper\bin\Debug\DataTypeHelper.pdb
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\SQLHelper\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\SQLHelper\obj\Debug\SQLHelper.dll
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\SQLHelper\obj\Debug\SQLHelper.pdb

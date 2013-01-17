@@ -1,0 +1,28 @@
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\ConfigurationHelper\bin\Debug\ConfigurationHelper.dll
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\ConfigurationHelper\bin\Debug\ConfigurationHelper.pdb
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\ConfigurationHelper\bin\Debug\ConfigurationHelper.xml
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.Resources.resources
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.vbproj.GenerateResource.Cache
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.dll
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.xml
+C:\Users\jfischer\documents\visual studio 2010\Projects\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.pdb
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\ConfigurationHelper\bin\Debug\ConfigurationHelper.dll
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\ConfigurationHelper\bin\Debug\ConfigurationHelper.pdb
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\ConfigurationHelper\bin\Debug\ConfigurationHelper.xml
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\ConfigurationHelper\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.Resources.resources
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\ConfigurationHelper\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\ConfigurationHelper\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.dll
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.xml
+C:\Users\nsmith\Documents\Visual Studio 2010\Projects\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.pdb
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\ConfigurationHelper\bin\Debug\ConfigurationHelper.dll
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\ConfigurationHelper\bin\Debug\ConfigurationHelper.pdb
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\ConfigurationHelper\bin\Debug\ConfigurationHelper.xml
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.Resources.resources
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.dll
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.xml
+C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.pdb
