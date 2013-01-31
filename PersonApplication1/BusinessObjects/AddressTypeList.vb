@@ -61,7 +61,9 @@ Public Class AddressTypeList
         For Each at As AddressType In _List
             If at.IsSavable = True Then
                 at = at.Save()
-                
+                If at.IsDirty = False Then
+                    at = at.Save()
+                End If
             End If
         Next
         Return Me
@@ -70,7 +72,7 @@ Public Class AddressTypeList
     Public Function IsSavable() As Boolean
         Dim result As Boolean = False
         For Each at As AddressType In _List
-            If at.IsSavable = True Then
+            If at.IsSavable() = True Then
                 result = True
                 Exit For
             End If

@@ -7,6 +7,7 @@ Public Class Database
     Private _cmd As SqlCommand
     Private _da As SqlDataAdapter
     Private _ds As DataSet
+    Private _transaction As SqlTransaction
 
     Private _ConnectionName As String = String.Empty
 
@@ -83,6 +84,42 @@ Public Class Database
         _cn.Close()
         'return the dataset to the caller
         Return _ds
+    End Function
+
+    Public Sub BeginTransaction(connectioName As String)
+        'SETUP THE CONNECTION STRING
+        _cn.ConnectionString = ConfigurationHelper.Configuration.GetConnectionString(connectioName)
+        'OPEN THE CONNECTION
+        _cn.Open()
+
+        'BEGIN THE TRANSACTION
+        _transaction = _cn.BeginTransaction
+    End Sub
+
+    Public Sub EndTransaction()
+        'COMMIT THE TRANSACTION
+        _transaction = _cn.BeginTransaction
+        'CLOSE THE CONNECTION
+        _cn.Close()
+    End Sub
+
+    Public Sub RollbackTransaction()
+        'ROLL BACK THE TRANSACTION
+        _transaction.Rollback()
+        'CLOSE THE CONNECTION
+        _cn.Close()
+    End Sub
+
+    Public Function ExecuteNonQueryWithTransaction() As SqlCommand
+        'ASSUME THE CONNECTION HAS BEEN OPENED
+        'SETUP THE COMMAND OBJECT
+        _cmd.Connection = _cn
+        'CALL THE EXECUTENONQUERY MTHOD OF THE COMMAND OBJECT
+        _cmd.ExecuteNonQuery()
+        'RETURN THE COMMAND OBJECT TO THE CALLER
+        Return _cmd
+
+
     End Function
 
 #End Region

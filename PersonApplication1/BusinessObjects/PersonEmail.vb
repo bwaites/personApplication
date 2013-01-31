@@ -1,18 +1,52 @@
 ﻿Imports DatabaseHelper
-Public Class EmailType
+Public Class PersonEmail
     Inherits HeaderData
+
 #Region " Private Members "
-    Private _Type As String = String.Empty
+    Private _PersonID As Guid = Guid.Empty
+    Private _Email As String = String.Empty
+    Private _EmailTypeID As Guid = Guid.Empty
+
 #End Region
 
 #Region " Public Properties "
-    Public Property Type As String
+    Public Property PersonID As Guid
         Get
-            Return _Type
+            Return _PersonID
+        End Get
+        Set(value As Guid)
+            If value <> _PersonID Then
+                _PersonID = value
+                MyBase.IsDirty = True
+                'Raise an Event here to notify
+                'if the object is savable
+                RaiseEvent evtIsSavable(IsSavable)
+            End If
+        End Set
+    End Property
+
+    Public Property Email As String
+        Get
+            Return _Email
         End Get
         Set(value As String)
-            If value <> _Type Then
-                _Type = value
+            If value <> _Email Then
+                _Email = value
+                MyBase.IsDirty = True
+                'Raise an Event here to notify
+                'if the object is savable
+                RaiseEvent evtIsSavable(IsSavable)
+            End If
+        End Set
+    End Property
+
+    Public Property EmailTypeID As Guid
+        Get
+            Return _EmailTypeID
+        End Get
+        Set(value As Guid)
+            If value <> _EmailTypeID Then
+                _EmailTypeID = value
                 MyBase.IsDirty = True
                 'Raise an Event here to notify
                 'if the object is savable
@@ -29,13 +63,17 @@ Public Class EmailType
             'Setting up the Command object
             database.Command.Parameters.Clear()
             database.Command.CommandType = CommandType.StoredProcedure
-            database.Command.CommandText = "tblEmailType_INSERT"
+            database.Command.CommandText = "tblPersonEmail_INSERT"
             'Add the header data parameters
             MyBase.Initialize(database, Guid.Empty)
             'Add the parameter
-            database.Command.Parameters.Add("@Type", SqlDbType.VarChar).Value = _Type
+            database.Command.Parameters.Add("@PersonID", SqlDbType.UniqueIdentifier).Value = _PersonID
+            database.Command.Parameters.Add("@Email", SqlDbType.VarChar).Value = _Email
+            database.Command.Parameters.Add("@EmailTypeID", SqlDbType.UniqueIdentifier).Value = _EmailTypeID
+
+
             'Execute non query
-            database.ExecuteNonQuery()
+            database.ExecuteNonQueryWithTransaction()
             'Retrieve the header data values from the command object
             MyBase.Initialize(database.Command)
 
@@ -51,13 +89,16 @@ Public Class EmailType
             'Setting up the Command object
             database.Command.Parameters.Clear()
             database.Command.CommandType = CommandType.StoredProcedure
-            database.Command.CommandText = "tblEmailType_UPDATE"
+            database.Command.CommandText = "tblPersonEmail_UPDATE"
             'Add the header data parameters
             MyBase.Initialize(database, MyBase.Id)
             'Add the parameter
-            database.Command.Parameters.Add("@Type", SqlDbType.VarChar).Value = _Type
+            database.Command.Parameters.Add("@PersonID", SqlDbType.UniqueIdentifier).Value = _PersonID
+            database.Command.Parameters.Add("@Email", SqlDbType.VarChar).Value = _Email
+            database.Command.Parameters.Add("@EmailTypeID", SqlDbType.UniqueIdentifier).Value = _EmailTypeID
+
             'Execute non query
-            database.ExecuteNonQuery()
+            database.ExecuteNonQueryWithTransaction()
             'Retrieve the header data values from the command object
             MyBase.Initialize(database.Command)
 
@@ -72,9 +113,9 @@ Public Class EmailType
         Try
             database.Command.Parameters.Clear()
             database.Command.CommandType = CommandType.StoredProcedure
-            database.Command.CommandText = "tblEmailType_DELETE"
+            database.Command.CommandText = "tblPersonEmail_DELETE"
             MyBase.Initialize(database, MyBase.Id)
-            database.ExecuteNonQuery()
+            database.ExecuteNonQueryWithTransaction()
             MyBase.Initialize(database.Command)
 
             Return True
@@ -88,10 +129,15 @@ Public Class EmailType
         'ASSUME TRUE UNLESS A RULE IS BROKEN
         Dim result As Boolean = True
 
-        If _Type = String.Empty Then
+
+        If _Email.Trim = String.Empty Then
             result = False
         End If
-        If _Type.Length > 20 Then
+        If _Email.Length > 30 Then
+            result = False
+        End If
+
+        If _EmailTypeID = Guid.Empty Then
             result = False
         End If
 
@@ -101,16 +147,18 @@ Public Class EmailType
 #End Region
 
 #Region " Public Methods "
-    Public Function Save() As EmailType
-        Dim db As New Database(My.Settings.ConnectionName)
+    Public Function Save(database As Database, parentId As Guid) As PersonEmail
+
+        _PersonID = parentId
+
         Dim result As Boolean = True
 
         If MyBase.IsNew = True AndAlso MyBase.IsDirty = True AndAlso IsValid() = True Then
-            result = Insert(db)
+            result = Insert(database)
         ElseIf MyBase.Deleted = True AndAlso MyBase.IsDirty = True Then
-            result = Delete(db)
+            result = Delete(database)
         ElseIf MyBase.IsNew = False AndAlso MyBase.IsDirty = True AndAlso IsValid() = True Then
-            result = Update(db)
+            result = Update(database)
         End If
 
         If result = True Then
@@ -127,12 +175,12 @@ Public Class EmailType
             Return False
         End If
     End Function
-    Public Function GetById(id As Guid) As EmailType
+    Public Function GetById(id As Guid) As PersonEmail
 
         Dim db As New Database(My.Settings.ConnectionName)
         Dim ds As DataSet = Nothing
         db.Command.CommandType = CommandType.StoredProcedure
-        db.Command.CommandText = "tblEmailType_getById"
+        db.Command.CommandText = "tblPersonEmail_getById"
         db.Command.Parameters.Add("@Id", SqlDbType.UniqueIdentifier).Value = id
         ds = db.ExecuteQuery()
 
@@ -146,15 +194,17 @@ Public Class EmailType
             Return Me
         Else
             If ds.Tables(0).Rows.Count = 0 Then
-                Throw New Exception(String.Format("Email Type {0} was not fount", id))
+                Throw New Exception(String.Format("Person Email {0} was not fount", id))
             Else
-                Throw New Exception(String.Format("Email Type {0} found multiple records", id))
+                Throw New Exception(String.Format("Person Email {0} found multiple records", id))
             End If
         End If
 
     End Function
     Public Sub InitializeBusinessData(dr As DataRow)
-        _Type = dr("Type")
+        _PersonID = dr("PersonID")
+        _Email = dr("Email")
+        _EmailTypeID = dr("EmailTypeID")
     End Sub
 #End Region
 
@@ -172,5 +222,4 @@ Public Class EmailType
 #Region " Construction "
 
 #End Region
-
 End Class

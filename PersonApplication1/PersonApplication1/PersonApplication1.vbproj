@@ -143,8 +143,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\images\check.jpg" />
-    <Content Include="bin\Debug\images\empty.jpg" />
-    <Content Include="bin\Debug\images\fail.jpg" />
     <Content Include="bin\Debug\PersonApplication.vshost.exe" />
     <Content Include="bin\Debug\PersonApplication1.exe" />
     <Content Include="bin\Debug\PersonApplication1.pdb" />

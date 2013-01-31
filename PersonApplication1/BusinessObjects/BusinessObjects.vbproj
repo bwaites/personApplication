@@ -85,6 +85,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Person.vb" />
+    <Compile Include="PersonAddress.vb" />
+    <Compile Include="PersonAddressList.vb" />
+    <Compile Include="PersonEmail.vb" />
+    <Compile Include="PersonEmailList.vb" />
+    <Compile Include="PersonPhone.vb" />
+    <Compile Include="PersonPhoneList.vb" />
     <Compile Include="PhoneType.vb" />
     <Compile Include="PhoneTypeList.vb" />
   </ItemGroup>

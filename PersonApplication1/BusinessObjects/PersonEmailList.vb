@@ -1,16 +1,15 @@
-﻿Imports DatabaseHelper
-Imports System.ComponentModel
-Public Class EmailTypeList
-
+﻿Imports System.ComponentModel
+Imports DatabaseHelper
+Public Class PersonEmailList
 #Region " Private Members "
 
-    Private WithEvents _List As New BindingList(Of EmailType)
+    Private WithEvents _List As New BindingList(Of PersonEmail)
 
 #End Region
 
 #Region " Public Properties "
 
-    Public ReadOnly Property List() As BindingList(Of EmailType)
+    Public ReadOnly Property List() As BindingList(Of PersonEmail)
         Get
             Return _List
         End Get
@@ -26,28 +25,24 @@ Public Class EmailTypeList
 
 
 
-    Public Function GetAll() As EmailTypeList
+    Public Function GetByPersonId(id As Guid) As PersonEmailList
 
         Dim db As New Database(My.Settings.ConnectionName)
         Dim ds As DataSet = Nothing
         db.Command.CommandType = CommandType.StoredProcedure
-        db.Command.CommandText = "tblEmailType_getAll"
+        db.Command.CommandText = "tblPersonEmail_getByPersonId"
+        db.Command.Parameters.Add("@Id", SqlDbType.UniqueIdentifier).Value.id()
         ds = db.ExecuteQuery()
 
-        Dim blank As New EmailType
-        blank.Id = Guid.Empty
-        blank.Type = String.Empty
-
-        _List.Add(blank)
 
         For Each dr As DataRow In ds.Tables(0).Rows
-            Dim at As New EmailType()
+            Dim at As New PersonEmail()
             at.Initialize(dr)
             at.InitializeBusinessData(dr)
             at.IsNew = False
             at.IsDirty = False
 
-            AddHandler at.evtIsSavable, AddressOf EmailTypeList_evtIsSavable
+            AddHandler at.evtIsSavable, AddressOf PersonEmailList_evtIsSavable
 
             _List.Add(at)
         Next
@@ -56,21 +51,23 @@ Public Class EmailTypeList
 
     End Function
 
-    Public Function Save() As EmailTypeList
-        For Each at As EmailType In _List
+    Public Function Save(database As Database, parentId As Guid) As Boolean
+        Dim result As Boolean = True
+        For Each at As PersonEmail In _List
             If at.IsSavable = True Then
-                at = at.Save()
-                If at.IsDirty = False Then
-                    at = at.Save()
+                at = at.Save(database, parentId)
+                If at.IsNew = True Then
+                    result = False
+                    Exit For
                 End If
             End If
         Next
-        Return Me
+        Return result
     End Function
 
     Public Function IsSavable() As Boolean
         Dim result As Boolean = False
-        For Each at As EmailType In _List
+        For Each at As PersonEmail In _List
             If at.IsSavable() = True Then
                 result = True
                 Exit For
@@ -89,13 +86,13 @@ Public Class EmailTypeList
 
 #Region " Public Event Handlers "
 
-    Private Sub EmailTypeList_evtIsSavable(savable As Boolean)
+    Private Sub PersonEmailList_evtIsSavable(savable As Boolean)
         RaiseEvent evtIsSavable(savable)
     End Sub
 
     Private Sub _List_AddingNew(sender As Object, e As System.ComponentModel.AddingNewEventArgs) Handles _List.AddingNew
-        e.NewObject = New EmailType
-        AddHandler CType(e.NewObject, AddressType).evtIsSavable, AddressOf EmailTypeList_evtIsSavable
+        e.NewObject = New PersonEmail
+        AddHandler CType(e.NewObject, PersonEmail).evtIsSavable, AddressOf PersonEmailList_evtIsSavable
     End Sub
 
 #End Region
