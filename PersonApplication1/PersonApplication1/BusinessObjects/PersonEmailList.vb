@@ -23,28 +23,26 @@ Public Class PersonEmailList
 
 #Region " Public Methods "
 
-
-
     Public Function GetByPersonId(id As Guid) As PersonEmailList
 
         Dim db As New Database(My.Settings.ConnectionName)
         Dim ds As DataSet = Nothing
         db.Command.CommandType = CommandType.StoredProcedure
         db.Command.CommandText = "tblPersonEmail_getByPersonId"
-        db.Command.Parameters.Add("@Id", SqlDbType.UniqueIdentifier).Value.id()
+        db.Command.Parameters.Add("@Id", SqlDbType.UniqueIdentifier).Value = id
         ds = db.ExecuteQuery()
 
 
         For Each dr As DataRow In ds.Tables(0).Rows
-            Dim at As New PersonEmail()
-            at.Initialize(dr)
-            at.InitializeBusinessData(dr)
-            at.IsNew = False
-            at.IsDirty = False
+            Dim pe As New PersonEmail()
+            pe.Initialize(dr)
+            pe.InitializeBusinessData(dr)
+            pe.IsNew = False
+            pe.IsDirty = False
 
-            AddHandler at.evtIsSavable, AddressOf PersonEmailList_evtIsSavable
+            AddHandler pe.evtIsSavable, AddressOf PersonEmailList_evtIsSavable
 
-            _List.Add(at)
+            _List.Add(pe)
         Next
 
         Return Me

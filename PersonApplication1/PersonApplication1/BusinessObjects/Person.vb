@@ -137,7 +137,7 @@ Public Class Person
             database.Command.CommandType = CommandType.StoredProcedure
             database.Command.CommandText = "tblPerson_DELETE"
             MyBase.Initialize(database, MyBase.Id)
-            database.ExecuteNonQuery()
+            database.ExecuteNonQueryWithTransaction()
             '
             'DON'T FORGET TO SOFT DELETE THE CHILDREN OF THE PARENT
             '
@@ -221,11 +221,7 @@ Public Class Person
         '
         'ADD CHECKS HERE FOR CHILDREN BEING SAVABLE
         '
-        If MyBase.IsDirty = True AndAlso IsValid() = True OrElse Phones.IsSavable = True Then
-            Return True
-        ElseIf MyBase.IsDirty = True AndAlso IsValid() = True OrElse Emails.IsSavable = True Then
-            Return True
-        ElseIf MyBase.IsDirty = True AndAlso IsValid() = True OrElse Addresses.IsSavable = True Then
+        If MyBase.IsDirty = True AndAlso IsValid() = True OrElse Phones.IsSavable = True OrElse Emails.IsSavable = True OrElse Addresses.IsSavable = True Then
             Return True
         Else
             Return False

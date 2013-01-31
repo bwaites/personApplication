@@ -31,20 +31,20 @@ Public Class PersonAddressList
         Dim ds As DataSet = Nothing
         db.Command.CommandType = CommandType.StoredProcedure
         db.Command.CommandText = "tblPersonAddress_getByPersonId"
-        db.Command.Parameters.Add("@Id", SqlDbType.UniqueIdentifier).Value.id()
+        db.Command.Parameters.Add("@Id", SqlDbType.UniqueIdentifier).Value = id
         ds = db.ExecuteQuery()
 
 
         For Each dr As DataRow In ds.Tables(0).Rows
-            Dim at As New PersonAddress()
-            at.Initialize(dr)
-            at.InitializeBusinessData(dr)
-            at.IsNew = False
-            at.IsDirty = False
+            Dim pa As New PersonAddress()
+            pa.Initialize(dr)
+            pa.InitializeBusinessData(dr)
+            pa.IsNew = False
+            pa.IsDirty = False
 
-            AddHandler at.evtIsSavable, AddressOf PersonAddressList_evtIsSavable
+            AddHandler pa.evtIsSavable, AddressOf PersonAddressList_evtIsSavable
 
-            _List.Add(at)
+            _List.Add(pa)
         Next
 
         Return Me
@@ -53,10 +53,10 @@ Public Class PersonAddressList
 
     Public Function Save(database As Database, parentId As Guid) As Boolean
         Dim result As Boolean = True
-        For Each at As PersonAddress In _List
-            If at.IsSavable = True Then
-                at = at.Save(database, parentId)
-                If at.IsNew = True Then
+        For Each pa As PersonAddress In _List
+            If pa.IsSavable = True Then
+                pa = pa.Save(database, parentId)
+                If pa.IsNew = True Then
                     result = False
                     Exit For
                 End If
@@ -67,8 +67,8 @@ Public Class PersonAddressList
 
     Public Function IsSavable() As Boolean
         Dim result As Boolean = False
-        For Each at As PersonAddress In _List
-            If at.IsSavable() = True Then
+        For Each pa As PersonAddress In _List
+            If pa.IsSavable() = True Then
                 result = True
                 Exit For
             End If
