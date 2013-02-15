@@ -36,3 +36,16 @@ C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\
 C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.dll
 C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.xml
 C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.pdb
+H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\DatabaseHelper.dll
+H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\DatabaseHelper.pdb
+H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\DatabaseHelper.xml
+H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\ConfigurationHelper.dll
+H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\ConfigurationHelper.pdb
+H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\ConfigurationHelper.xml
+H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\ResolveAssemblyReference.cache
+H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.Resources.resources
+H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\GenerateResource.read.1.tlog
+H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\GenerateResource.write.1.tlog
+H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.dll
+H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.xml
+H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.pdb

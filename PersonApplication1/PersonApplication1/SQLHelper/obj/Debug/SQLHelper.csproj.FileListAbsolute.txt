@@ -12,3 +12,10 @@ C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\SQLHelper\bin\D
 C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\SQLHelper\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\SQLHelper\obj\Debug\SQLHelper.dll
 C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\SQLHelper\obj\Debug\SQLHelper.pdb
+H:\Project\personApplication\PersonApplication1\PersonApplication1\SQLHelper\obj\Debug\ResolveAssemblyReference.cache
+H:\Project\personApplication\PersonApplication1\PersonApplication1\SQLHelper\obj\Debug\SQLHelper.dll
+H:\Project\personApplication\PersonApplication1\PersonApplication1\SQLHelper\obj\Debug\SQLHelper.pdb
+H:\Project\personApplication\PersonApplication1\PersonApplication1\SQLHelper\bin\Debug\SQLHelper.dll
+H:\Project\personApplication\PersonApplication1\PersonApplication1\SQLHelper\bin\Debug\SQLHelper.pdb
+H:\Project\personApplication\PersonApplication1\PersonApplication1\SQLHelper\bin\Debug\DataTypeHelper.dll
+H:\Project\personApplication\PersonApplication1\PersonApplication1\SQLHelper\bin\Debug\DataTypeHelper.pdb

@@ -6,11 +6,11 @@ Public Class HeaderData
 #Region " Private Members "
 
     Private _Id As Guid = Guid.Empty
-    Private _Version As Integer
-    Private _LastUpdated As DateTime
-    Private _Deleted As Boolean
-    Private _IsDirty As Boolean
-    Private _IsNew As Boolean
+    Private _Version As Integer = 0
+    Private _LastUpdated As DateTime = DateTime.MaxValue
+    Private _Deleted As Boolean = False
+    Private _IsDirty As Boolean = False
+    Private _IsNew As Boolean = True
     Private _IsSaved As Image = Nothing
 
 #End Region

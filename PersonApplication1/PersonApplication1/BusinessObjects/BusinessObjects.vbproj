@@ -90,6 +90,7 @@
     <Compile Include="PersonAddressList.vb" />
     <Compile Include="PersonEmail.vb" />
     <Compile Include="PersonEmailList.vb" />
+    <Compile Include="PersonList.vb" />
     <Compile Include="PersonPhone.vb" />
     <Compile Include="PersonPhoneList.vb" />
     <Compile Include="PhoneType.vb" />
@@ -119,6 +120,10 @@
     <ProjectReference Include="..\DatabaseHelper\DatabaseHelper.vbproj">
       <Project>{F42F61F8-CC6B-4C5D-92E0-30B1D2BD24B3}</Project>
       <Name>DatabaseHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataTypeHelper\DataTypeHelper.csproj">
+      <Project>{0C5D7E94-04CE-49FA-8D4E-97AD5BDB146F}</Project>
+      <Name>DataTypeHelper</Name>
     </ProjectReference>
     <ProjectReference Include="..\SQLHelper\SQLHelper.csproj">
       <Project>{06B532E1-4B6F-4F19-9698-A7AB2F6B6B62}</Project>

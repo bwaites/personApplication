@@ -85,6 +85,12 @@
     <Compile Include="frmAddressType.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmPerson.Designer.vb">
+      <DependentUpon>frmPerson.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerson.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -108,6 +114,9 @@
     <EmbeddedResource Include="frmAddressType.resx">
       <DependentUpon>frmAddressType.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPerson.resx">
+      <DependentUpon>frmPerson.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -118,6 +127,7 @@
   <ItemGroup>
     <None Include="bin\Debug\PersonApplication.vshost.exe.manifest" />
     <None Include="bin\Debug\PersonApplication1.vshost.exe.manifest" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="datasystems.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -26,3 +26,13 @@ C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\ConfigurationHe
 C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.dll
 C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.xml
 C:\Users\bwaites\Downloads\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.pdb
+H:\Project\personApplication\PersonApplication1\PersonApplication1\ConfigurationHelper\bin\Debug\ConfigurationHelper.dll
+H:\Project\personApplication\PersonApplication1\PersonApplication1\ConfigurationHelper\bin\Debug\ConfigurationHelper.pdb
+H:\Project\personApplication\PersonApplication1\PersonApplication1\ConfigurationHelper\bin\Debug\ConfigurationHelper.xml
+H:\Project\personApplication\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\ResolveAssemblyReference.cache
+H:\Project\personApplication\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.Resources.resources
+H:\Project\personApplication\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\GenerateResource.read.1.tlog
+H:\Project\personApplication\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\GenerateResource.write.1.tlog
+H:\Project\personApplication\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.dll
+H:\Project\personApplication\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.xml
+H:\Project\personApplication\PersonApplication1\PersonApplication1\ConfigurationHelper\obj\Debug\ConfigurationHelper.pdb

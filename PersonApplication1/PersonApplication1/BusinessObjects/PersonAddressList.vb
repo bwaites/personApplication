@@ -31,7 +31,7 @@ Public Class PersonAddressList
         Dim ds As DataSet = Nothing
         db.Command.CommandType = CommandType.StoredProcedure
         db.Command.CommandText = "tblPersonAddress_getByPersonId"
-        db.Command.Parameters.Add("@Id", SqlDbType.UniqueIdentifier).Value = id
+        db.Command.Parameters.Add("@PersonID", SqlDbType.UniqueIdentifier).Value = id
         ds = db.ExecuteQuery()
 
 

@@ -176,6 +176,8 @@ Public Class Person
 #Region " Public Methods "
     Public Function Save() As Person
         Dim db As New Database(My.Settings.ConnectionName)
+        db.BeginTransaction(My.Settings.ConnectionName)
+
         Dim result As Boolean = True
 
         If MyBase.IsNew = True AndAlso MyBase.IsDirty = True AndAlso IsValid() = True Then

@@ -74,7 +74,7 @@ Public Class PersonPhone
 
 
             'Execute non query
-            database.ExecuteNonQuery()
+            database.ExecuteNonQueryWithTransaction()
             'Retrieve the header data values from the command object
             MyBase.Initialize(database.Command)
 
@@ -99,7 +99,7 @@ Public Class PersonPhone
             database.Command.Parameters.Add("@PhoneTypeID", SqlDbType.UniqueIdentifier).Value = _PhoneTypeID
 
             'Execute non query
-            database.ExecuteNonQuery()
+            database.ExecuteNonQueryWithTransaction()
             'Retrieve the header data values from the command object
             MyBase.Initialize(database.Command)
 

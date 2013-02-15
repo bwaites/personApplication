@@ -86,19 +86,23 @@ Public Class Database
         Return _ds
     End Function
 
-    Public Sub BeginTransaction(connectioName As String)
+    Public Sub BeginTransaction(connectionName As String)
         'SETUP THE CONNECTION STRING
-        _cn.ConnectionString = ConfigurationHelper.Configuration.GetConnectionString(connectioName)
+        _cn.ConnectionString = ConfigurationHelper.Configuration.GetConnectionString(connectionName)
         'OPEN THE CONNECTION
         _cn.Open()
 
         'BEGIN THE TRANSACTION
         _transaction = _cn.BeginTransaction
+        'TELL THE COMMAND OBJECT ABOUT THE CONNECTION   
+        _cmd.Connection = _cn
+        'TELL THE COMMANDS TRANSACTION ABOUT THE TRANSACTION
+        _cmd.Transaction = _transaction
     End Sub
 
     Public Sub EndTransaction()
         'COMMIT THE TRANSACTION
-        _transaction = _cn.BeginTransaction
+        _transaction.Commit()
         'CLOSE THE CONNECTION
         _cn.Close()
     End Sub
