@@ -36,19 +36,22 @@ Partial Class frmPerson
         Me.Number = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PhoneType = New System.Windows.Forms.DataGridViewComboBoxColumn()
         Me.PhoneTypeID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvPersonEmail = New System.Windows.Forms.DataGridView()
         Me.dgvPersonAddress = New System.Windows.Forms.DataGridView()
-        Me.PersonID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Email = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.dgvPersonEmail = New System.Windows.Forms.DataGridView()
+        Me.Email = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmailType = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.EmailTypeID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Type = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.City = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.State = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Zipcode = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AddressType = New System.Windows.Forms.DataGridViewComboBoxColumn()
         Me.AddressTypeID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgvPerson, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.dgvPersonPhone, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvPersonEmail, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvPersonAddress, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvPersonEmail, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgvPerson
@@ -102,7 +105,7 @@ Partial Class frmPerson
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1326, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1444, 24)
         Me.MenuStrip1.TabIndex = 4
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -131,7 +134,7 @@ Partial Class frmPerson
         Me.dgvPersonPhone.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Number, Me.PhoneType, Me.PhoneTypeID})
         Me.dgvPersonPhone.Location = New System.Drawing.Point(291, 28)
         Me.dgvPersonPhone.Name = "dgvPersonPhone"
-        Me.dgvPersonPhone.Size = New System.Drawing.Size(345, 302)
+        Me.dgvPersonPhone.Size = New System.Drawing.Size(345, 331)
         Me.dgvPersonPhone.TabIndex = 5
         '
         'Number
@@ -153,38 +156,41 @@ Partial Class frmPerson
         Me.PhoneTypeID.Name = "PhoneTypeID"
         Me.PhoneTypeID.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         '
-        'dgvPersonEmail
-        '
-        Me.dgvPersonEmail.AllowUserToAddRows = False
-        Me.dgvPersonEmail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvPersonEmail.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.PersonID, Me.Email})
-        Me.dgvPersonEmail.Location = New System.Drawing.Point(651, 28)
-        Me.dgvPersonEmail.Name = "dgvPersonEmail"
-        Me.dgvPersonEmail.Size = New System.Drawing.Size(244, 302)
-        Me.dgvPersonEmail.TabIndex = 6
-        '
         'dgvPersonAddress
         '
         Me.dgvPersonAddress.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvPersonAddress.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Type, Me.State, Me.Zipcode, Me.AddressTypeID})
-        Me.dgvPersonAddress.Location = New System.Drawing.Point(901, 28)
+        Me.dgvPersonAddress.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Type, Me.City, Me.State, Me.Zipcode, Me.AddressType, Me.AddressTypeID})
+        Me.dgvPersonAddress.Location = New System.Drawing.Point(667, 27)
         Me.dgvPersonAddress.Name = "dgvPersonAddress"
-        Me.dgvPersonAddress.Size = New System.Drawing.Size(344, 72)
+        Me.dgvPersonAddress.Size = New System.Drawing.Size(551, 150)
         Me.dgvPersonAddress.TabIndex = 7
         '
-        'PersonID
+        'dgvPersonEmail
         '
-        Me.PersonID.DataPropertyName = "Email"
-        Me.PersonID.HeaderText = "Email"
-        Me.PersonID.Name = "PersonID"
+        Me.dgvPersonEmail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvPersonEmail.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Email, Me.EmailType, Me.EmailTypeID})
+        Me.dgvPersonEmail.Location = New System.Drawing.Point(667, 219)
+        Me.dgvPersonEmail.Name = "dgvPersonEmail"
+        Me.dgvPersonEmail.Size = New System.Drawing.Size(346, 150)
+        Me.dgvPersonEmail.TabIndex = 8
         '
         'Email
         '
-        Me.Email.DataPropertyName = "EmailTypeID"
-        Me.Email.HeaderText = "Email Type"
+        Me.Email.DataPropertyName = "Email"
+        Me.Email.HeaderText = "Email"
         Me.Email.Name = "Email"
-        Me.Email.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Email.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        '
+        'EmailType
+        '
+        Me.EmailType.DataPropertyName = "EmailTypeID"
+        Me.EmailType.HeaderText = "Email Type"
+        Me.EmailType.Name = "EmailType"
+        '
+        'EmailTypeID
+        '
+        Me.EmailTypeID.DataPropertyName = "EmailTypeID"
+        Me.EmailTypeID.HeaderText = "Email Type ID"
+        Me.EmailTypeID.Name = "EmailTypeID"
         '
         'Type
         '
@@ -192,20 +198,34 @@ Partial Class frmPerson
         Me.Type.HeaderText = "Street"
         Me.Type.Name = "Type"
         Me.Type.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Type.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'City
+        '
+        Me.City.DataPropertyName = "City"
+        Me.City.HeaderText = "City"
+        Me.City.Name = "City"
         '
         'State
         '
+        Me.State.DataPropertyName = "State"
         Me.State.HeaderText = "State"
         Me.State.Name = "State"
         '
         'Zipcode
         '
+        Me.Zipcode.DataPropertyName = "Zipcode"
         Me.Zipcode.HeaderText = "Zipcode"
         Me.Zipcode.Name = "Zipcode"
         '
+        'AddressType
+        '
+        Me.AddressType.DataPropertyName = "AddressTypeID"
+        Me.AddressType.HeaderText = "Address Type"
+        Me.AddressType.Name = "AddressType"
+        '
         'AddressTypeID
         '
+        Me.AddressTypeID.DataPropertyName = "AddressTypeID"
         Me.AddressTypeID.HeaderText = "Address Type ID"
         Me.AddressTypeID.Name = "AddressTypeID"
         Me.AddressTypeID.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
@@ -215,9 +235,9 @@ Partial Class frmPerson
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1326, 463)
-        Me.Controls.Add(Me.dgvPersonAddress)
+        Me.ClientSize = New System.Drawing.Size(1444, 463)
         Me.Controls.Add(Me.dgvPersonEmail)
+        Me.Controls.Add(Me.dgvPersonAddress)
         Me.Controls.Add(Me.dgvPersonPhone)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtFirstName)
@@ -231,8 +251,8 @@ Partial Class frmPerson
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.dgvPersonPhone, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvPersonEmail, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvPersonAddress, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvPersonEmail, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -248,15 +268,18 @@ Partial Class frmPerson
     Friend WithEvents mnuSave As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuExit As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents dgvPersonPhone As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvPersonAddress As System.Windows.Forms.DataGridView
     Friend WithEvents Number As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PhoneType As System.Windows.Forms.DataGridViewComboBoxColumn
     Friend WithEvents PhoneTypeID As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents dgvPersonEmail As System.Windows.Forms.DataGridView
-    Friend WithEvents dgvPersonAddress As System.Windows.Forms.DataGridView
-    Friend WithEvents PersonID As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Email As System.Windows.Forms.DataGridViewComboBoxColumn
+    Friend WithEvents Email As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EmailType As System.Windows.Forms.DataGridViewComboBoxColumn
+    Friend WithEvents EmailTypeID As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Type As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents City As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents State As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Zipcode As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AddressType As System.Windows.Forms.DataGridViewComboBoxColumn
     Friend WithEvents AddressTypeID As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

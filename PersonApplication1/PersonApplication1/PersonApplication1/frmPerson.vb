@@ -13,6 +13,7 @@ Public Class frmPerson
         Me.dgvPerson.DataSource = people.List
         Me.dgvPersonPhone.AutoGenerateColumns = False
         Me.dgvPersonEmail.AutoGenerateColumns = False
+        Me.dgvPersonAddress.AutoGenerateColumns = False
         phoneTypes = phoneTypes.GetAll
         emailTypes = emailTypes.GetAll
         addressTypes = addressTypes.GetAll
@@ -82,18 +83,18 @@ Public Class frmPerson
         End With
     End Sub
 
-
-
-    Private Sub dgvEmailType_CellFormatting(sender As Object, e As System.Windows.Forms.DataGridViewCellFormattingEventArgs) Handles dgvPersonEmail.CellFormatting
+    Private Sub dgvPersonEmail_CellFormatting(sender As Object, e As System.Windows.Forms.DataGridViewCellFormattingEventArgs) Handles dgvPersonEmail.CellFormatting
         If e.ColumnIndex = 1 AndAlso dgvPersonEmail IsNot Nothing Then
             SetEmailTypes(dgvPersonEmail.Columns(1))
         End If
     End Sub
 
 
-    Private Sub dgvEmailType_DataError(sender As Object, e As System.Windows.Forms.DataGridViewDataErrorEventArgs) Handles dgvPersonEmail.DataError
 
-    End Sub
+
+
+
+
 
     Private Sub SetAddressTypes(ByVal column As DataGridViewComboBoxColumn)
         With column
@@ -106,14 +107,23 @@ Public Class frmPerson
     End Sub
 
 
-    Private Sub dgvAddressType_CellFormatting(sender As Object, e As System.Windows.Forms.DataGridViewCellFormattingEventArgs) Handles dgvPersonAddress.CellFormatting
+    Private Sub dgvPersonAddress_CellFormatting(sender As Object, e As System.Windows.Forms.DataGridViewCellFormattingEventArgs) Handles dgvPersonAddress.CellFormatting
         If e.ColumnIndex = 1 AndAlso dgvPersonAddress IsNot Nothing Then
-            SetAddressTypes(dgvPersonAddress.Columns(1))
+            SetAddressTypes(dgvPersonAddress.Columns(4))
         End If
     End Sub
 
 
-    Private Sub dgvAddressType_DataError(sender As Object, e As System.Windows.Forms.DataGridViewDataErrorEventArgs)
+    Private Sub dgvPersonAddress_DataError(sender As Object, e As System.Windows.Forms.DataGridViewDataErrorEventArgs)
 
     End Sub
+
+
+
+
+    Private Sub dgvPersonEmail_DataError(sender As Object, e As System.Windows.Forms.DataGridViewDataErrorEventArgs) Handles dgvPersonEmail.DataError
+
+    End Sub
+
+
 End Class
