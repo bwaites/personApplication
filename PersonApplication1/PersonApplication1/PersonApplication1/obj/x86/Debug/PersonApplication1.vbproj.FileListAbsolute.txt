@@ -95,3 +95,6 @@ H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplica
 H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\bin\Debug\SQLHelper.pdb
 H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\bin\Debug\ConfigurationHelper.pdb
 H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\bin\Debug\ConfigurationHelper.xml
+C:\Users\Rina\Desktop\cornerOfCreation\fanatafics\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication1.exe
+C:\Users\Rina\Desktop\cornerOfCreation\fanatafics\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication1.xml
+C:\Users\Rina\Desktop\cornerOfCreation\fanatafics\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication1.pdb
