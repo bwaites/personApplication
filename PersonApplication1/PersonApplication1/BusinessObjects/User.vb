@@ -12,9 +12,7 @@ Public Class User
     '
     'ADD PRIVATE MEMBERS FOR CHILDREN HERE
     '
-    Private WithEvents _Phones As StoryPhoneList = Nothing
-    Private WithEvents _Emails As StoryEmailList = Nothing
-    Private WithEvents _Addresses As StoryAddressList = Nothing
+    
 
 #End Region
 
@@ -100,35 +98,6 @@ Public Class User
     'ADD PUBLIC PROPERITES FOR CHILDREN HERE
     '
 
-    Public ReadOnly Property Phones As StoryPhoneList
-        Get
-            If _Phones Is Nothing Then
-                _Phones = New StoryPhoneList
-                _Phones = _Phones.GetByStoryId(MyBase.Id)
-            End If
-            Return _Phones
-        End Get
-    End Property
-
-    Public ReadOnly Property Emails As StoryEmailList
-        Get
-            If _Emails Is Nothing Then
-                _Emails = New StoryEmailList
-                _Emails = _Emails.GetByStoryId(MyBase.Id)
-            End If
-            Return _Emails
-        End Get
-    End Property
-
-    Public ReadOnly Property Addresses As StoryAddressList
-        Get
-            If _Addresses Is Nothing Then
-                _Addresses = New StoryAddressList
-                _Addresses = _Addresses.GetByStoryId(MyBase.Id)
-            End If
-            Return _Addresses
-        End Get
-    End Property
 
 #End Region
 
@@ -139,13 +108,13 @@ Public Class User
             'Setting up the Command object
             database.Command.Parameters.Clear()
             database.Command.CommandType = CommandType.StoredProcedure
-            database.Command.CommandText = "tblStory_INSERT"
+            database.Command.CommandText = "tblUser_INSERT"
             'Add the header data parameters
             MyBase.Initialize(database, Guid.Empty)
             'Add the parameter
             database.Command.Parameters.Add("@UserName", SqlDbType.VarChar).Value = _UserName
             database.Command.Parameters.Add("@Password", SqlDbType.VarChar).Value = _Password
-            database.Command.Parameters.Add("@Email", SqlDbType.UniqueIdentifier).Value = _Email
+            database.Command.Parameters.Add("@Email", SqlDbType.VarChar).Value = _Email
             database.Command.Parameters.Add("@SecurityQuestion", SqlDbType.VarChar).Value = _SecurityQuestion
             database.Command.Parameters.Add("@SecurityAnswer", SqlDbType.VarChar).Value = _SecurityAnswer
             database.Command.Parameters.Add("@StoryAmount", SqlDbType.Int).Value = _StoryAmount
@@ -167,7 +136,7 @@ Public Class User
             'Setting up the Command object
             database.Command.Parameters.Clear()
             database.Command.CommandType = CommandType.StoredProcedure
-            database.Command.CommandText = "tblStory_UPDATE"
+            database.Command.CommandText = "tblUser_UPDATE"
             'Add the header data parameters
             MyBase.Initialize(database, MyBase.Id)
             'Add the parameter
@@ -195,7 +164,7 @@ Public Class User
         Try
             database.Command.Parameters.Clear()
             database.Command.CommandType = CommandType.StoredProcedure
-            database.Command.CommandText = "tblStory_DELETE"
+            database.Command.CommandText = "tblUser_DELETE"
             MyBase.Initialize(database, MyBase.Id)
             database.ExecuteNonQueryWithTransaction()
             '
@@ -275,17 +244,7 @@ Public Class User
         'Handle the children here'
         '
 
-        If result = True AndAlso Phones.IsSavable = True Then
-            result = _Phones.Save(db, MyBase.Id)
-        End If
-
-        If result = True AndAlso Emails.IsSavable = True Then
-            result = _Emails.Save(db, MyBase.Id)
-        End If
-
-        If result = True AndAlso Addresses.IsSavable = True Then
-            result = _Addresses.Save(db, MyBase.Id)
-        End If
+        
         '
         'Handle the transaction here'
         '
@@ -301,7 +260,7 @@ Public Class User
         '
         'ADD CHECKS HERE FOR CHILDREN BEING SAVABLE
         '
-        If MyBase.IsDirty = True AndAlso IsValid() = True OrElse Phones.IsSavable = True OrElse Emails.IsSavable = True OrElse Addresses.IsSavable = True Then
+        If MyBase.IsDirty = True Then
             Return True
         Else
             Return False

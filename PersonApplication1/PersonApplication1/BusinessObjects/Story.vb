@@ -8,9 +8,7 @@ Public Class Story
     '
     'ADD PRIVATE MEMBERS FOR CHILDREN HERE
     '
-    Private WithEvents _Phones As StoryPhoneList = Nothing
-    Private WithEvents _Emails As StoryEmailList = Nothing
-    Private WithEvents _Addresses As StoryAddressList = Nothing
+    Private WithEvents _StoryChapter As StoryChapterList = Nothing
 
 #End Region
 
@@ -62,33 +60,15 @@ Public Class Story
     'ADD PUBLIC PROPERITES FOR CHILDREN HERE
     '
 
-    Public ReadOnly Property Phones As StoryPhoneList
-        Get
-            If _Phones Is Nothing Then
-                _Phones = New StoryPhoneList
-                _Phones = _Phones.GetByStoryId(MyBase.Id)
-            End If
-            Return _Phones
-        End Get
-    End Property
+    
 
-    Public ReadOnly Property Emails As StoryEmailList
+    Public ReadOnly Property Addresses As StoryChapterList
         Get
-            If _Emails Is Nothing Then
-                _Emails = New StoryEmailList
-                _Emails = _Emails.GetByStoryId(MyBase.Id)
+            If _StoryChapter Is Nothing Then
+                _StoryChapter = New StoryChapterList
+                _StoryChapter = _StoryChapter.GetByStoryID(MyBase.Id)
             End If
-            Return _Emails
-        End Get
-    End Property
-
-    Public ReadOnly Property Addresses As StoryAddressList
-        Get
-            If _Addresses Is Nothing Then
-                _Addresses = New StoryAddressList
-                _Addresses = _Addresses.GetByStoryId(MyBase.Id)
-            End If
-            Return _Addresses
+            Return _StoryChapter
         End Get
     End Property
 
@@ -213,16 +193,10 @@ Public Class Story
         'Handle the children here'
         '
 
-        If result = True AndAlso Phones.IsSavable = True Then
-            result = _Phones.Save(db, MyBase.Id)
-        End If
+       
 
-        If result = True AndAlso Emails.IsSavable = True Then
-            result = _Emails.Save(db, MyBase.Id)
-        End If
-
-        If result = True AndAlso Addresses.IsSavable = True Then
-            result = _Addresses.Save(db, MyBase.Id)
+        If result = True AndAlso _StoryChapter.IsSavable = True Then
+            result = _StoryChapter.Save(db, MyBase.Id)
         End If
         '
         'Handle the transaction here'
@@ -239,7 +213,7 @@ Public Class Story
         '
         'ADD CHECKS HERE FOR CHILDREN BEING SAVABLE
         '
-        If MyBase.IsDirty = True AndAlso IsValid() = True OrElse Phones.IsSavable = True OrElse Emails.IsSavable = True OrElse Addresses.IsSavable = True Then
+        If MyBase.IsDirty = True AndAlso IsValid() = True OrElse _StoryChapter.IsSavable = True Then
             Return True
         Else
             Return False

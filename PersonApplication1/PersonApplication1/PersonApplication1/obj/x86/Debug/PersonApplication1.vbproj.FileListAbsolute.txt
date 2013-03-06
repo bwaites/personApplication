@@ -73,11 +73,9 @@ H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplica
 H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication1.pdb
 H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
 H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication.Form1.resources
-H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication.frmAddressType.resources
 H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication.Resources.resources
 H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
 H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
-H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication.frmPerson.resources
 H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\bin\Debug\datasystems.config
 H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\bin\Debug\PersonApplication1.exe
 H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\bin\Debug\PersonApplication1.pdb
@@ -98,3 +96,5 @@ H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplica
 C:\Users\Rina\Desktop\cornerOfCreation\fanatafics\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication1.exe
 C:\Users\Rina\Desktop\cornerOfCreation\fanatafics\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication1.xml
 C:\Users\Rina\Desktop\cornerOfCreation\fanatafics\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication1.pdb
+H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication.frmUser.resources
+H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\bin\Debug\PersonApplication1.exe.config

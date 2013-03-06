@@ -65,12 +65,8 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddressType.vb" />
-    <Compile Include="AddressTypeList.vb" />
     <Compile Include="Category.vb" />
     <Compile Include="CategoryList.vb" />
-    <Compile Include="EmailType.vb" />
-    <Compile Include="EmailTypeList.vb" />
     <Compile Include="Genre.vb" />
     <Compile Include="GenreList.vb" />
     <Compile Include="HeaderData.vb" />
@@ -91,16 +87,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Person.vb" />
-    <Compile Include="PersonAddress.vb" />
-    <Compile Include="PersonAddressList.vb" />
-    <Compile Include="PersonEmail.vb" />
-    <Compile Include="PersonEmailList.vb" />
-    <Compile Include="PersonList.vb" />
-    <Compile Include="PersonPhone.vb" />
-    <Compile Include="PersonPhoneList.vb" />
-    <Compile Include="PhoneType.vb" />
-    <Compile Include="PhoneTypeList.vb" />
     <Compile Include="Story.vb" />
     <Compile Include="StoryChapter.vb" />
     <Compile Include="StoryChapterList.vb" />
@@ -112,10 +98,6 @@
     <Compile Include="StoryGenreList.vb" />
     <Compile Include="StoryList.vb" />
     <Compile Include="User.vb" />
-    <Compile Include="UserFavAuthor.vb" />
-    <Compile Include="UserFavAuthorList.vb" />
-    <Compile Include="UserFavStory.vb" />
-    <Compile Include="UserFavStoryList.vb" />
     <Compile Include="UserList.vb" />
     <Compile Include="UserStory.vb" />
     <Compile Include="UserStoryList.vb" />

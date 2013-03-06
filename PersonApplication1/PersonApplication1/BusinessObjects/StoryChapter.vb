@@ -169,11 +169,6 @@ Public Class StoryChapter
             result = False
         End If
 
-        If _Zipcode.Trim = String.Empty Then
-            result = False
-        End If
-
-
         Return result
 
     End Function

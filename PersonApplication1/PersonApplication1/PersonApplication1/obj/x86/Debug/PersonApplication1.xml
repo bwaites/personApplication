@@ -6,7 +6,59 @@ PersonApplication1
 </name>
 </assembly>
 <members>
-<member name="P:PersonApplication.My.Resources.Resources.ResourceManager">
+<member name="T:PersonApplication.fanataficsDataSet.tblUserDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PersonApplication.fanataficsDataSet.tblUserRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PersonApplication.fanataficsDataSet.tblUserRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PersonApplication.fanataficsDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:PersonApplication.fanataficsDataSetTableAdapters.tblUserTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:PersonApplication.fanataficsDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(PersonApplication.fanataficsDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:PersonApplication.fanataficsDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(PersonApplication.fanataficsDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:PersonApplication.fanataficsDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(PersonApplication.fanataficsDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:PersonApplication.fanataficsDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:PersonApplication.fanataficsDataSetTableAdapters.TableAdapterManager.UpdateAll(PersonApplication.fanataficsDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:PersonApplication.fanataficsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:PersonApplication.fanataficsDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:PersonApplication.fanataficsDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:PersonApplication.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
