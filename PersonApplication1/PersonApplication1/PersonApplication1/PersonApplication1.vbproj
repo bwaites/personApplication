@@ -53,6 +53,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -84,6 +86,18 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmPerson.Designer.vb">
+      <DependentUpon>frmPerson.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerson.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTestWebService.Designer.vb">
+      <DependentUpon>frmTestWebService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTestWebService.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmUser.Designer.vb">
       <DependentUpon>frmUser.vb</DependentUpon>
     </Compile>
@@ -105,10 +119,21 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Web References\localhost.Batman\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerson.resx">
+      <DependentUpon>frmPerson.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTestWebService.resx">
+      <DependentUpon>frmTestWebService.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUser.resx">
       <DependentUpon>frmUser.vb</DependentUpon>
@@ -148,6 +173,14 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="Web References\localhost.Batman\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\localhost.Batman\ZipcodeService.wsdl" />
+    <None Include="Web References\localhost.Batman\ZipInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessObjects\BusinessObjects.vbproj">
@@ -165,9 +198,29 @@
     <Content Include="bin\Debug\PersonApplication1.exe" />
     <Content Include="bin\Debug\PersonApplication1.pdb" />
     <Content Include="bin\Debug\PersonApplication1.vshost.exe" />
+    <None Include="Web References\localhost.Batman\ZipcodeService.disco" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:17817/ZipcodeService.asmx%3fop=HelloWorld">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\localhost.Batman\</RelPath>
+      <UpdateFromURL>http://localhost:17817/ZipcodeService.asmx%3fop=HelloWorld</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>PersonApplication1_localhost_Batman_ZipcodeService</CachedSettingsPropName>
+    </WebReferenceUrl>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

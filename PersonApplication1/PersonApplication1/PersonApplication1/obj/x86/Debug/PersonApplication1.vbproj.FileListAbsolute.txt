@@ -98,3 +98,5 @@ C:\Users\Rina\Desktop\cornerOfCreation\fanatafics\personApplication\PersonApplic
 C:\Users\Rina\Desktop\cornerOfCreation\fanatafics\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication1.pdb
 H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication.frmUser.resources
 H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\bin\Debug\PersonApplication1.exe.config
+H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication.frmPerson.resources
+H:\Project\personApplication\PersonApplication1\PersonApplication1\PersonApplication1\obj\x86\Debug\PersonApplication.frmTestWebService.resources

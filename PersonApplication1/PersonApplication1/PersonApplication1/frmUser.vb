@@ -3,9 +3,9 @@
 Public Class frmUser
 
     Private WithEvents user As UserList
-    Private WithEvents stories As StoryList
-    Private WithEvents fandoms As StoryFandomList
-    Private WithEvents genres As GenreList
+    WithEvents stories As StoryList
+    WithEvents fandoms As StoryFandomList
+    WithEvents genres As GenreList
    
     
 
@@ -16,6 +16,8 @@ Public Class frmUser
         Me.dgvUser.DataSource = user.Search().List
         Me.dgvStory.AutoGenerateColumns = False
 
+        Me.dgvFandom.DataSource = fandoms.List
+        Me.dgvGenre.DataSource = genres.List
 
         Me.dgvFandom.AutoGenerateColumns = False
 
@@ -118,6 +120,7 @@ Public Class frmUser
             SetGenres(dgvGenre.Columns(4))
         End If
     End Sub
+
 
 
 

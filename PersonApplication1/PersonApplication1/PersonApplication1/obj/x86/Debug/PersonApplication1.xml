@@ -6,7 +6,62 @@ PersonApplication1
 </name>
 </assembly>
 <members>
-<member name="T:PersonApplication.fanataficsDataSet.tblUserDataTable">
+<member name="M:PersonApplication.localhost.Batman.ZipcodeService.#ctor">
+	<remarks/>
+</member><member name="E:PersonApplication.localhost.Batman.ZipcodeService.HelloWorldCompleted">
+	<remarks/>
+</member><member name="E:PersonApplication.localhost.Batman.ZipcodeService.GetCityByZipcodeCompleted">
+	<remarks/>
+</member><member name="M:PersonApplication.localhost.Batman.ZipcodeService.HelloWorld">
+	<remarks/>
+</member><member name="M:PersonApplication.localhost.Batman.ZipcodeService.HelloWorldAsync">
+	<remarks/>
+</member><member name="M:PersonApplication.localhost.Batman.ZipcodeService.HelloWorldAsync(System.Object)">
+	<remarks/>
+</member><member name="M:PersonApplication.localhost.Batman.ZipcodeService.GetCityByZipcode(System.String)">
+	<remarks/>
+</member><member name="M:PersonApplication.localhost.Batman.ZipcodeService.GetCityByZipcodeAsync(System.String)">
+	<remarks/>
+</member><member name="M:PersonApplication.localhost.Batman.ZipcodeService.GetCityByZipcodeAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:PersonApplication.localhost.Batman.ZipcodeService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:PersonApplication.localhost.Batman.ZipcodeService">
+	<remarks/>
+</member><member name="P:PersonApplication.localhost.Batman.ZipInfo.City">
+	<remarks/>
+</member><member name="P:PersonApplication.localhost.Batman.ZipInfo.State">
+	<remarks/>
+</member><member name="P:PersonApplication.localhost.Batman.ZipInfo.Zipcode">
+	<remarks/>
+</member><member name="T:PersonApplication.localhost.Batman.ZipInfo">
+	<remarks/>
+</member><member name="T:PersonApplication.localhost.Batman.HelloWorldCompletedEventHandler">
+	<remarks/>
+</member><member name="P:PersonApplication.localhost.Batman.HelloWorldCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:PersonApplication.localhost.Batman.HelloWorldCompletedEventArgs">
+	<remarks/>
+</member><member name="T:PersonApplication.localhost.Batman.GetCityByZipcodeCompletedEventHandler">
+	<remarks/>
+</member><member name="P:PersonApplication.localhost.Batman.GetCityByZipcodeCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:PersonApplication.localhost.Batman.GetCityByZipcodeCompletedEventArgs">
+	<remarks/>
+</member><member name="P:PersonApplication.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:PersonApplication.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:PersonApplication.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:PersonApplication.fanataficsDataSet.tblUserDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -57,19 +112,6 @@ Used to sort self-referenced table's rows
 </member><member name="T:PersonApplication.fanataficsDataSetTableAdapters.TableAdapterManager">
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="P:PersonApplication.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:PersonApplication.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:PersonApplication.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
 </member>
 </members>

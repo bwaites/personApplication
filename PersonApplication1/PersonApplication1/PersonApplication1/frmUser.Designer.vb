@@ -42,13 +42,13 @@ Partial Class frmUser
         Me.Summary = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MaturityID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgvFandom = New System.Windows.Forms.DataGridView()
-        Me.FandomName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CategoryID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgvGenre = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FanataficsDataSet = New PersonApplication.fanataficsDataSet()
         Me.TblUserBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TblUserTableAdapter = New PersonApplication.fanataficsDataSetTableAdapters.tblUserTableAdapter()
+        Me.FandomName = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.CategoryID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewComboBoxColumn()
         CType(Me.dgvUser, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.dgvStory, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,7 +64,7 @@ Partial Class frmUser
         Me.dgvUser.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.UserName, Me.Password, Me.Email, Me.SecurityQuestion, Me.SecurityAnswer, Me.StoryAmount})
         Me.dgvUser.Location = New System.Drawing.Point(26, 28)
         Me.dgvUser.Name = "dgvUser"
-        Me.dgvUser.Size = New System.Drawing.Size(645, 69)
+        Me.dgvUser.Size = New System.Drawing.Size(763, 103)
         Me.dgvUser.TabIndex = 0
         '
         'UserName
@@ -160,9 +160,9 @@ Partial Class frmUser
         '
         Me.dgvStory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvStory.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Title, Me.Summary, Me.MaturityID})
-        Me.dgvStory.Location = New System.Drawing.Point(26, 118)
+        Me.dgvStory.Location = New System.Drawing.Point(42, 187)
         Me.dgvStory.Name = "dgvStory"
-        Me.dgvStory.Size = New System.Drawing.Size(346, 50)
+        Me.dgvStory.Size = New System.Drawing.Size(346, 87)
         Me.dgvStory.TabIndex = 5
         '
         'Title
@@ -189,37 +189,19 @@ Partial Class frmUser
         '
         Me.dgvFandom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvFandom.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.FandomName, Me.CategoryID})
-        Me.dgvFandom.Location = New System.Drawing.Point(26, 187)
+        Me.dgvFandom.Location = New System.Drawing.Point(409, 209)
         Me.dgvFandom.Name = "dgvFandom"
-        Me.dgvFandom.Size = New System.Drawing.Size(250, 54)
+        Me.dgvFandom.Size = New System.Drawing.Size(296, 81)
         Me.dgvFandom.TabIndex = 6
-        '
-        'FandomName
-        '
-        Me.FandomName.DataPropertyName = "FandomName"
-        Me.FandomName.HeaderText = "Fandom Name"
-        Me.FandomName.Name = "FandomName"
-        '
-        'CategoryID
-        '
-        Me.CategoryID.DataPropertyName = "CategoryID"
-        Me.CategoryID.HeaderText = "CategoryID"
-        Me.CategoryID.Name = "CategoryID"
         '
         'dgvGenre
         '
         Me.dgvGenre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvGenre.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1})
-        Me.dgvGenre.Location = New System.Drawing.Point(26, 280)
+        Me.dgvGenre.Location = New System.Drawing.Point(81, 301)
         Me.dgvGenre.Name = "dgvGenre"
-        Me.dgvGenre.Size = New System.Drawing.Size(147, 54)
+        Me.dgvGenre.Size = New System.Drawing.Size(217, 109)
         Me.dgvGenre.TabIndex = 7
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "GenreType"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Genre Type"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         '
         'FanataficsDataSet
         '
@@ -234,6 +216,28 @@ Partial Class frmUser
         'TblUserTableAdapter
         '
         Me.TblUserTableAdapter.ClearBeforeFill = True
+        '
+        'FandomName
+        '
+        Me.FandomName.DataPropertyName = "FandomName"
+        Me.FandomName.HeaderText = "Fandom Name"
+        Me.FandomName.Name = "FandomName"
+        Me.FandomName.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.FandomName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        '
+        'CategoryID
+        '
+        Me.CategoryID.DataPropertyName = "CategoryID"
+        Me.CategoryID.HeaderText = "CategoryID"
+        Me.CategoryID.Name = "CategoryID"
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "GenreType"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Genre Type"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
         'frmUser
         '
@@ -282,11 +286,11 @@ Partial Class frmUser
     Friend WithEvents Summary As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents MaturityID As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents dgvFandom As System.Windows.Forms.DataGridView
-    Friend WithEvents FandomName As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents CategoryID As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents dgvGenre As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FanataficsDataSet As PersonApplication.fanataficsDataSet
     Friend WithEvents TblUserBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents TblUserTableAdapter As PersonApplication.fanataficsDataSetTableAdapters.tblUserTableAdapter
+    Friend WithEvents FandomName As System.Windows.Forms.DataGridViewComboBoxColumn
+    Friend WithEvents CategoryID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewComboBoxColumn
 End Class

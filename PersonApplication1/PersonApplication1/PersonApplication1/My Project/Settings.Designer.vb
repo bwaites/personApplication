@@ -63,6 +63,16 @@ Namespace My
                 Return CType(Me("fanataficsConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.WebServiceUrl),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("http://localhost:17817/ZipcodeService.asmx")>  _
+        Public ReadOnly Property PersonApplication1_localhost_Batman_ZipcodeService() As String
+            Get
+                Return CType(Me("PersonApplication1_localhost_Batman_ZipcodeService"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 
