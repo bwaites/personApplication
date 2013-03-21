@@ -48,6 +48,7 @@ Partial Class frmPerson
         Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tpSearch = New System.Windows.Forms.TabPage()
+        Me.btnSearchPhones = New System.Windows.Forms.Button()
         Me.txtSearchEmails = New System.Windows.Forms.Button()
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.txtPhone = New System.Windows.Forms.TextBox()
@@ -57,7 +58,7 @@ Partial Class frmPerson
         Me.txtZip = New System.Windows.Forms.TextBox()
         Me.txtState = New System.Windows.Forms.TextBox()
         Me.txtCity = New System.Windows.Forms.TextBox()
-        Me.txtAddress = New System.Windows.Forms.TextBox()
+        Me.txtStreet = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -65,7 +66,6 @@ Partial Class frmPerson
         Me.txtLastName = New System.Windows.Forms.TextBox()
         Me.lblLastName = New System.Windows.Forms.Label()
         Me.tpPersonInfo = New System.Windows.Forms.TabPage()
-        Me.btnSearchPhones = New System.Windows.Forms.Button()
         CType(Me.dgvPerson, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.dgvPersonPhone, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -266,7 +266,7 @@ Partial Class frmPerson
         Me.tpSearch.Controls.Add(Me.txtZip)
         Me.tpSearch.Controls.Add(Me.txtState)
         Me.tpSearch.Controls.Add(Me.txtCity)
-        Me.tpSearch.Controls.Add(Me.txtAddress)
+        Me.tpSearch.Controls.Add(Me.txtStreet)
         Me.tpSearch.Controls.Add(Me.Label5)
         Me.tpSearch.Controls.Add(Me.Label4)
         Me.tpSearch.Controls.Add(Me.Label3)
@@ -283,6 +283,15 @@ Partial Class frmPerson
         Me.tpSearch.TabIndex = 0
         Me.tpSearch.Text = "Search"
         Me.tpSearch.UseVisualStyleBackColor = True
+        '
+        'btnSearchPhones
+        '
+        Me.btnSearchPhones.Location = New System.Drawing.Point(324, 290)
+        Me.btnSearchPhones.Name = "btnSearchPhones"
+        Me.btnSearchPhones.Size = New System.Drawing.Size(75, 23)
+        Me.btnSearchPhones.TabIndex = 20
+        Me.btnSearchPhones.Text = "Search"
+        Me.btnSearchPhones.UseVisualStyleBackColor = True
         '
         'txtSearchEmails
         '
@@ -355,12 +364,12 @@ Partial Class frmPerson
         Me.txtCity.Size = New System.Drawing.Size(163, 20)
         Me.txtCity.TabIndex = 11
         '
-        'txtAddress
+        'txtStreet
         '
-        Me.txtAddress.Location = New System.Drawing.Point(69, 145)
-        Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(163, 20)
-        Me.txtAddress.TabIndex = 10
+        Me.txtStreet.Location = New System.Drawing.Point(69, 145)
+        Me.txtStreet.Name = "txtStreet"
+        Me.txtStreet.Size = New System.Drawing.Size(163, 20)
+        Me.txtStreet.TabIndex = 10
         '
         'Label5
         '
@@ -428,15 +437,6 @@ Partial Class frmPerson
         Me.tpPersonInfo.Text = "Person Information"
         Me.tpPersonInfo.UseVisualStyleBackColor = True
         '
-        'btnSearchPhones
-        '
-        Me.btnSearchPhones.Location = New System.Drawing.Point(324, 290)
-        Me.btnSearchPhones.Name = "btnSearchPhones"
-        Me.btnSearchPhones.Size = New System.Drawing.Size(75, 23)
-        Me.btnSearchPhones.TabIndex = 20
-        Me.btnSearchPhones.Text = "Search"
-        Me.btnSearchPhones.UseVisualStyleBackColor = True
-        '
         'frmPerson
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -496,7 +496,7 @@ Partial Class frmPerson
     Friend WithEvents txtZip As System.Windows.Forms.TextBox
     Friend WithEvents txtState As System.Windows.Forms.TextBox
     Friend WithEvents txtCity As System.Windows.Forms.TextBox
-    Friend WithEvents txtAddress As System.Windows.Forms.TextBox
+    Friend WithEvents txtStreet As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label

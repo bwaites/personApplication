@@ -46,6 +46,56 @@ Public Class PersonList
             End If
         End Set
     End Property
+
+    Public WriteOnly Property Email As String
+        Set(value As String)
+            If value.Trim <> String.Empty Then
+                _Criteria.Fields.Add("Email")
+                _Criteria.Values.Add(value)
+                _Criteria.Types.Add(DataTypeHelper.Type.DataType.String_Contains)
+            End If
+        End Set
+    End Property
+
+    Public WriteOnly Property Street As String
+        Set(value As String)
+            If value.Trim <> String.Empty Then
+                _Criteria.Fields.Add("Street")
+                _Criteria.Values.Add(value)
+                _Criteria.Types.Add(Type.DataType.String_Contains)
+            End If
+        End Set
+    End Property
+
+    Public WriteOnly Property City As String
+        Set(value As String)
+            If value.Trim <> String.Empty Then
+                _Criteria.Fields.Add("City")
+                _Criteria.Values.Add(value)
+                _Criteria.Types.Add(Type.DataType.String_Contains)
+            End If
+        End Set
+    End Property
+
+    Public WriteOnly Property State As String
+        Set(value As String)
+            If value.Trim <> String.Empty Then
+                _Criteria.Fields.Add("State")
+                _Criteria.Values.Add(value)
+                _Criteria.Types.Add(Type.DataType.String_Contains)
+            End If
+        End Set
+    End Property
+
+    Public WriteOnly Property Zip As String
+        Set(value As String)
+            If value.Trim <> String.Empty Then
+                _Criteria.Fields.Add("Zipcode")
+                _Criteria.Values.Add(value)
+                _Criteria.Types.Add(Type.DataType.String_Contains)
+            End If
+        End Set
+    End Property
 #End Region
 
 #Region " Private Methods "
@@ -98,6 +148,69 @@ Public Class PersonList
             p.InitializeBusinessData(dr)
             p.IsNew = False
             p.IsDirty = False
+            _List.Add(p)
+            AddHandler p.evtIsSavable, AddressOf PersonList_evtIsSavable
+        Next
+        Return Me
+    End Function
+
+    Public Function SearchPhoneList() As PersonList
+        Dim db As New Database(My.Settings.ConnectionName)
+        Dim ds As DataSet
+        _Criteria.TableName = "tblPersonPhone"
+        db.Command.CommandType = CommandType.Text
+        db.Command.CommandText = Builder.BuildList(_Criteria)
+
+        ds = db.ExecuteQuery
+        For Each dr As DataRow In ds.Tables(0).Rows
+            Dim p As New Person
+            p = p.GetById(dr("PersonID"))
+            'p.Initialize(p)
+            'p.InitializeBusinessData(p)
+            'p.IsNew = False
+            'p.IsDirty = False
+            _List.Add(p)
+            AddHandler p.evtIsSavable, AddressOf PersonList_evtIsSavable
+        Next
+        Return Me
+    End Function
+
+    Public Function SearchEmailList() As PersonList
+        Dim db As New Database(My.Settings.ConnectionName)
+        Dim ds As DataSet
+        _Criteria.TableName = "tblPersonEmail"
+        db.Command.CommandType = CommandType.Text
+        db.Command.CommandText = Builder.BuildList(_Criteria)
+
+        ds = db.ExecuteQuery
+        For Each dr As DataRow In ds.Tables(0).Rows
+            Dim p As New Person
+            p = p.GetById(dr("PersonID"))
+            'p.Initialize(p)
+            'p.InitializeBusinessData(p)
+            'p.IsNew = False
+            'p.IsDirty = False
+            _List.Add(p)
+            AddHandler p.evtIsSavable, AddressOf PersonList_evtIsSavable
+        Next
+        Return Me
+    End Function
+
+    Public Function SearchAddressList() As PersonList
+        Dim db As New Database(My.Settings.ConnectionName)
+        Dim ds As DataSet
+        _Criteria.TableName = "tblPersonAddress"
+        db.Command.CommandType = CommandType.Text
+        db.Command.CommandText = Builder.BuildList(_Criteria)
+
+        ds = db.ExecuteQuery
+        For Each dr As DataRow In ds.Tables(0).Rows
+            Dim p As New Person
+            p = p.GetById(dr("PersonID"))
+            'p.Initialize(p)
+            'p.InitializeBusinessData(p)
+            'p.IsNew = False
+            'p.IsDirty = False
             _List.Add(p)
             AddHandler p.evtIsSavable, AddressOf PersonList_evtIsSavable
         Next

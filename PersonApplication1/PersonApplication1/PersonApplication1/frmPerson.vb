@@ -113,16 +113,32 @@ Public Class frmPerson
 
     Private Sub btnSearchAddresses_Click(sender As System.Object, e As System.EventArgs) Handles btnSearchAddresses.Click
 
-       
+        people = New PersonList
+        people.Street = Me.txtState.Text
+        people.City = Me.txtCity.Text
+        people.State = Me.txtState.Text
+        people.Zip = Me.txtZip.Text
+        people = people.SearchAddressList
+        Me.dgvPerson.DataSource = people.List
+
+
     End Sub
 
     Private Sub txtSearchEmails_Click(sender As System.Object, e As System.EventArgs) Handles txtSearchEmails.Click
-
+        people = New PersonList
+        people.Email = Me.txtEmail.Text
+        people = people.SearchEmailList
+        Me.dgvPerson.DataSource = people.List
     End Sub
 
     Private Sub btnSearchPhones_Click(sender As System.Object, e As System.EventArgs) Handles btnSearchPhones.Click
+        people = New PersonList
+        people.PhoneNumber = Me.txtPhone.Text
+        people = people.SearchPhoneList
+        Me.dgvPerson.DataSource = people.List
+    End Sub
 
-
-
+    Private Sub dgvPersonAddress_KeyUp(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles dgvPersonAddress.KeyUp
+        dgvPersonAddress.Refresh()
     End Sub
 End Class

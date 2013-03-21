@@ -6,49 +6,7 @@ PersonApplication1
 </name>
 </assembly>
 <members>
-<member name="M:PersonApplication.localhost.ZipcodeService.#ctor">
-	<remarks/>
-</member><member name="E:PersonApplication.localhost.ZipcodeService.HelloWorldCompleted">
-	<remarks/>
-</member><member name="E:PersonApplication.localhost.ZipcodeService.GetCityStateByZipcodeCompleted">
-	<remarks/>
-</member><member name="M:PersonApplication.localhost.ZipcodeService.HelloWorld">
-	<remarks/>
-</member><member name="M:PersonApplication.localhost.ZipcodeService.HelloWorldAsync">
-	<remarks/>
-</member><member name="M:PersonApplication.localhost.ZipcodeService.HelloWorldAsync(System.Object)">
-	<remarks/>
-</member><member name="M:PersonApplication.localhost.ZipcodeService.GetCityStateByZipcode(System.String)">
-	<remarks/>
-</member><member name="M:PersonApplication.localhost.ZipcodeService.GetCityStateByZipcodeAsync(System.String)">
-	<remarks/>
-</member><member name="M:PersonApplication.localhost.ZipcodeService.GetCityStateByZipcodeAsync(System.String,System.Object)">
-	<remarks/>
-</member><member name="M:PersonApplication.localhost.ZipcodeService.CancelAsync(System.Object)">
-	<remarks/>
-</member><member name="T:PersonApplication.localhost.ZipcodeService">
-	<remarks/>
-</member><member name="P:PersonApplication.localhost.ZipInfo.City">
-	<remarks/>
-</member><member name="P:PersonApplication.localhost.ZipInfo.State">
-	<remarks/>
-</member><member name="P:PersonApplication.localhost.ZipInfo.ZipCode">
-	<remarks/>
-</member><member name="T:PersonApplication.localhost.ZipInfo">
-	<remarks/>
-</member><member name="T:PersonApplication.localhost.HelloWorldCompletedEventHandler">
-	<remarks/>
-</member><member name="P:PersonApplication.localhost.HelloWorldCompletedEventArgs.Result">
-	<remarks/>
-</member><member name="T:PersonApplication.localhost.HelloWorldCompletedEventArgs">
-	<remarks/>
-</member><member name="T:PersonApplication.localhost.GetCityStateByZipcodeCompletedEventHandler">
-	<remarks/>
-</member><member name="P:PersonApplication.localhost.GetCityStateByZipcodeCompletedEventArgs.Result">
-	<remarks/>
-</member><member name="T:PersonApplication.localhost.GetCityStateByZipcodeCompletedEventArgs">
-	<remarks/>
-</member><member name="P:PersonApplication.My.Resources.Resources.ResourceManager">
+<member name="P:PersonApplication.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
@@ -113,6 +71,48 @@ Used to sort self-referenced table's rows
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
+</member><member name="M:PersonApplication.localhost.ZipcodeService.#ctor">
+	<remarks/>
+</member><member name="E:PersonApplication.localhost.ZipcodeService.HelloWorldCompleted">
+	<remarks/>
+</member><member name="E:PersonApplication.localhost.ZipcodeService.GetCityStateByZipcodeCompleted">
+	<remarks/>
+</member><member name="M:PersonApplication.localhost.ZipcodeService.HelloWorld">
+	<remarks/>
+</member><member name="M:PersonApplication.localhost.ZipcodeService.HelloWorldAsync">
+	<remarks/>
+</member><member name="M:PersonApplication.localhost.ZipcodeService.HelloWorldAsync(System.Object)">
+	<remarks/>
+</member><member name="M:PersonApplication.localhost.ZipcodeService.GetCityStateByZipcode(System.String)">
+	<remarks/>
+</member><member name="M:PersonApplication.localhost.ZipcodeService.GetCityStateByZipcodeAsync(System.String)">
+	<remarks/>
+</member><member name="M:PersonApplication.localhost.ZipcodeService.GetCityStateByZipcodeAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:PersonApplication.localhost.ZipcodeService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:PersonApplication.localhost.ZipcodeService">
+	<remarks/>
+</member><member name="P:PersonApplication.localhost.ZipInfo.City">
+	<remarks/>
+</member><member name="P:PersonApplication.localhost.ZipInfo.State">
+	<remarks/>
+</member><member name="P:PersonApplication.localhost.ZipInfo.ZipCode">
+	<remarks/>
+</member><member name="T:PersonApplication.localhost.ZipInfo">
+	<remarks/>
+</member><member name="T:PersonApplication.localhost.HelloWorldCompletedEventHandler">
+	<remarks/>
+</member><member name="P:PersonApplication.localhost.HelloWorldCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:PersonApplication.localhost.HelloWorldCompletedEventArgs">
+	<remarks/>
+</member><member name="T:PersonApplication.localhost.GetCityStateByZipcodeCompletedEventHandler">
+	<remarks/>
+</member><member name="P:PersonApplication.localhost.GetCityStateByZipcodeCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:PersonApplication.localhost.GetCityStateByZipcodeCompletedEventArgs">
+	<remarks/>
 </member>
 </members>
 </doc>
