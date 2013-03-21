@@ -65,6 +65,7 @@ Partial Class frmPerson
         Me.txtLastName = New System.Windows.Forms.TextBox()
         Me.lblLastName = New System.Windows.Forms.Label()
         Me.tpPersonInfo = New System.Windows.Forms.TabPage()
+        Me.btnSearchPhones = New System.Windows.Forms.Button()
         CType(Me.dgvPerson, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.dgvPersonPhone, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -255,6 +256,7 @@ Partial Class frmPerson
         '
         'tpSearch
         '
+        Me.tpSearch.Controls.Add(Me.btnSearchPhones)
         Me.tpSearch.Controls.Add(Me.txtSearchEmails)
         Me.tpSearch.Controls.Add(Me.txtEmail)
         Me.tpSearch.Controls.Add(Me.txtPhone)
@@ -284,7 +286,7 @@ Partial Class frmPerson
         '
         'txtSearchEmails
         '
-        Me.txtSearchEmails.Location = New System.Drawing.Point(324, 302)
+        Me.txtSearchEmails.Location = New System.Drawing.Point(324, 315)
         Me.txtSearchEmails.Name = "txtSearchEmails"
         Me.txtSearchEmails.Size = New System.Drawing.Size(75, 23)
         Me.txtSearchEmails.TabIndex = 19
@@ -426,6 +428,15 @@ Partial Class frmPerson
         Me.tpPersonInfo.Text = "Person Information"
         Me.tpPersonInfo.UseVisualStyleBackColor = True
         '
+        'btnSearchPhones
+        '
+        Me.btnSearchPhones.Location = New System.Drawing.Point(324, 290)
+        Me.btnSearchPhones.Name = "btnSearchPhones"
+        Me.btnSearchPhones.Size = New System.Drawing.Size(75, 23)
+        Me.btnSearchPhones.TabIndex = 20
+        Me.btnSearchPhones.Text = "Search"
+        Me.btnSearchPhones.UseVisualStyleBackColor = True
+        '
         'frmPerson
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -493,4 +504,5 @@ Partial Class frmPerson
     Friend WithEvents txtSearchEmails As System.Windows.Forms.Button
     Friend WithEvents txtEmail As System.Windows.Forms.TextBox
     Friend WithEvents txtPhone As System.Windows.Forms.TextBox
+    Friend WithEvents btnSearchPhones As System.Windows.Forms.Button
 End Class

@@ -36,6 +36,16 @@ Public Class PersonList
             End If
         End Set
     End Property
+
+    Public WriteOnly Property PhoneNumber As String
+        Set(value As String)
+            If value.Trim <> String.Empty Then
+                _Criteria.Fields.Add("Number")
+                _Criteria.Values.Add(value)
+                _Criteria.Types.Add(DataTypeHelper.Type.DataType.String_Contains)
+            End If
+        End Set
+    End Property
 #End Region
 
 #Region " Private Methods "

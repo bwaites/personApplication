@@ -115,4 +115,14 @@ Public Class frmPerson
 
        
     End Sub
+
+    Private Sub txtSearchEmails_Click(sender As System.Object, e As System.EventArgs) Handles txtSearchEmails.Click
+
+    End Sub
+
+    Private Sub btnSearchPhones_Click(sender As System.Object, e As System.EventArgs) Handles btnSearchPhones.Click
+
+
+
+    End Sub
 End Class
