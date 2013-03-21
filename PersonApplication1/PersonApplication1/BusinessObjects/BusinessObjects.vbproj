@@ -49,6 +49,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -67,15 +69,9 @@
   <ItemGroup>
     <Compile Include="AddressType.vb" />
     <Compile Include="AddressTypeList.vb" />
-    <Compile Include="Category.vb" />
-    <Compile Include="CategoryList.vb" />
     <Compile Include="EmailType.vb" />
     <Compile Include="EmailTypeList.vb" />
-    <Compile Include="Genre.vb" />
-    <Compile Include="GenreList.vb" />
     <Compile Include="HeaderData.vb" />
-    <Compile Include="Maturity.vb" />
-    <Compile Include="MaturityList.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -101,20 +97,11 @@
     <Compile Include="PersonPhoneList.vb" />
     <Compile Include="PhoneType.vb" />
     <Compile Include="PhoneTypeList.vb" />
-    <Compile Include="Story.vb" />
-    <Compile Include="StoryChapter.vb" />
-    <Compile Include="StoryChapterList.vb" />
-    <Compile Include="StoryChapterReview.vb" />
-    <Compile Include="StoryChapterReviewList.vb" />
-    <Compile Include="StoryFandom.vb" />
-    <Compile Include="StoryFandomList.vb" />
-    <Compile Include="StoryGenre.vb" />
-    <Compile Include="StoryGenreList.vb" />
-    <Compile Include="StoryList.vb" />
-    <Compile Include="User.vb" />
-    <Compile Include="UserList.vb" />
-    <Compile Include="UserStory.vb" />
-    <Compile Include="UserStoryList.vb" />
+    <Compile Include="Web References\localhost.ZipcodeWebService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -135,6 +122,14 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="Web References\localhost.ZipcodeWebService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\localhost.ZipcodeWebService\ZipcodeService.wsdl" />
+    <None Include="Web References\localhost.ZipcodeWebService\ZipInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DatabaseHelper\DatabaseHelper.vbproj">
@@ -149,6 +144,28 @@
       <Project>{06B532E1-4B6F-4F19-9698-A7AB2F6B6B62}</Project>
       <Name>SQLHelper</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:2343/ZipcodeService.asmx%3fop=GetCityStateByZipcode">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\localhost.ZipcodeWebService\</RelPath>
+      <UpdateFromURL>http://localhost:2343/ZipcodeService.asmx%3fop=GetCityStateByZipcode</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BusinessObjects_localhost_ZipcodeWebService_ZipcodeService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\localhost.ZipcodeWebService\ZipcodeService.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

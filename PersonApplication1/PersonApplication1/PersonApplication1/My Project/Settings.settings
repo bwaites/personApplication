@@ -10,8 +10,8 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=203M-11-12;Initial Catalog=fanatafics;Integrated Security=True</Value>
     </Setting>
-    <Setting Name="PersonApplication1_localhost_Batman_ZipcodeService" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://localhost:17817/ZipcodeService.asmx</Value>
+    <Setting Name="PersonApplication1_localhost_ZipcodeService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2343/ZipcodeService.asmx</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -81,6 +81,12 @@ Public Class PersonAddress
                 MyBase.IsDirty = True
                 'Raise an Event here to notify
                 'if the object is savable
+                Dim zip As New localhost.ZipcodeWebService.ZipcodeService
+                Dim zipInfo As New localhost.ZipcodeWebService.ZipInfo
+
+                zipInfo = zip.GetCityStateByZipcode(_Zipcode)
+                _City = zipInfo.City
+                _State = zipInfo.State
                 RaiseEvent evtIsSavable(IsSavable)
             End If
         End Set

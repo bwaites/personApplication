@@ -49,3 +49,16 @@ H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelpe
 H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.dll
 H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.xml
 H:\Project\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.pdb
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\DatabaseHelper.dll
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\DatabaseHelper.pdb
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\DatabaseHelper.xml
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\ConfigurationHelper.dll
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\ConfigurationHelper.pdb
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\bin\Debug\ConfigurationHelper.xml
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.Resources.resources
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.dll
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.xml
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DatabaseHelper\obj\Debug\DatabaseHelper.pdb

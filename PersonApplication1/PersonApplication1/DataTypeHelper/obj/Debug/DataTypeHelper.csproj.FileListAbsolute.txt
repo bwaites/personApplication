@@ -12,3 +12,8 @@ H:\Project\personApplication\PersonApplication1\PersonApplication1\DataTypeHelpe
 H:\Project\personApplication\PersonApplication1\PersonApplication1\DataTypeHelper\obj\Debug\ResolveAssemblyReference.cache
 H:\Project\personApplication\PersonApplication1\PersonApplication1\DataTypeHelper\obj\Debug\DataTypeHelper.dll
 H:\Project\personApplication\PersonApplication1\PersonApplication1\DataTypeHelper\obj\Debug\DataTypeHelper.pdb
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DataTypeHelper\bin\Debug\DataTypeHelper.dll
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DataTypeHelper\bin\Debug\DataTypeHelper.pdb
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DataTypeHelper\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DataTypeHelper\obj\Debug\DataTypeHelper.dll
+C:\Users\bwaites\Desktop\WedClass\personApplication\PersonApplication1\PersonApplication1\DataTypeHelper\obj\Debug\DataTypeHelper.pdb

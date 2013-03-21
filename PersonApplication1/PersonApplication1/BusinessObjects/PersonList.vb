@@ -22,7 +22,17 @@ Public Class PersonList
             If value.Trim <> String.Empty Then
                 _Criteria.Fields.Add("FirstName")
                 _Criteria.Values.Add(value)
-                _Criteria.Types.Add(DataTypeHelper.Type.DataType.String_Contains)
+                _Criteria.Types.Add(Type.DataType.String_Contains)
+            End If
+        End Set
+    End Property
+
+    Public WriteOnly Property LastName As String
+        Set(value As String)
+            If value.Trim <> String.Empty Then
+                _Criteria.Fields.Add("LastName")
+                _Criteria.Values.Add(value)
+                _Criteria.Types.Add(Type.DataType.String_Contains)
             End If
         End Set
     End Property

@@ -6,7 +6,49 @@ BusinessObjects
 </name>
 </assembly>
 <members>
-<member name="P:BusinessObjects.My.Resources.Resources.ResourceManager">
+<member name="M:BusinessObjects.localhost.ZipcodeWebService.ZipcodeService.#ctor">
+	<remarks/>
+</member><member name="E:BusinessObjects.localhost.ZipcodeWebService.ZipcodeService.HelloWorldCompleted">
+	<remarks/>
+</member><member name="E:BusinessObjects.localhost.ZipcodeWebService.ZipcodeService.GetCityStateByZipcodeCompleted">
+	<remarks/>
+</member><member name="M:BusinessObjects.localhost.ZipcodeWebService.ZipcodeService.HelloWorld">
+	<remarks/>
+</member><member name="M:BusinessObjects.localhost.ZipcodeWebService.ZipcodeService.HelloWorldAsync">
+	<remarks/>
+</member><member name="M:BusinessObjects.localhost.ZipcodeWebService.ZipcodeService.HelloWorldAsync(System.Object)">
+	<remarks/>
+</member><member name="M:BusinessObjects.localhost.ZipcodeWebService.ZipcodeService.GetCityStateByZipcode(System.String)">
+	<remarks/>
+</member><member name="M:BusinessObjects.localhost.ZipcodeWebService.ZipcodeService.GetCityStateByZipcodeAsync(System.String)">
+	<remarks/>
+</member><member name="M:BusinessObjects.localhost.ZipcodeWebService.ZipcodeService.GetCityStateByZipcodeAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:BusinessObjects.localhost.ZipcodeWebService.ZipcodeService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:BusinessObjects.localhost.ZipcodeWebService.ZipcodeService">
+	<remarks/>
+</member><member name="P:BusinessObjects.localhost.ZipcodeWebService.ZipInfo.City">
+	<remarks/>
+</member><member name="P:BusinessObjects.localhost.ZipcodeWebService.ZipInfo.State">
+	<remarks/>
+</member><member name="P:BusinessObjects.localhost.ZipcodeWebService.ZipInfo.ZipCode">
+	<remarks/>
+</member><member name="T:BusinessObjects.localhost.ZipcodeWebService.ZipInfo">
+	<remarks/>
+</member><member name="T:BusinessObjects.localhost.ZipcodeWebService.HelloWorldCompletedEventHandler">
+	<remarks/>
+</member><member name="P:BusinessObjects.localhost.ZipcodeWebService.HelloWorldCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:BusinessObjects.localhost.ZipcodeWebService.HelloWorldCompletedEventArgs">
+	<remarks/>
+</member><member name="T:BusinessObjects.localhost.ZipcodeWebService.GetCityStateByZipcodeCompletedEventHandler">
+	<remarks/>
+</member><member name="P:BusinessObjects.localhost.ZipcodeWebService.GetCityStateByZipcodeCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:BusinessObjects.localhost.ZipcodeWebService.GetCityStateByZipcodeCompletedEventArgs">
+	<remarks/>
+</member><member name="P:BusinessObjects.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>

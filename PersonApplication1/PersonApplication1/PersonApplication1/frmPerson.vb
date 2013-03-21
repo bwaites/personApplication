@@ -22,9 +22,10 @@ Public Class frmPerson
         addressTypes = addressTypes.GetAll
     End Sub
 
-    Private Sub btnSearch_Click(sender As System.Object, e As System.EventArgs) Handles btnSearch.Click
+    Private Sub btnSearch_Click(sender As System.Object, e As System.EventArgs) Handles btnSearchPeople.Click
         people = New PersonList
         people.FirstName = txtFirstName.Text
+        people.LastName = txtLastName.Text
         people = people.Search
         Me.dgvPerson.DataSource = people.List
     End Sub
@@ -104,4 +105,14 @@ Public Class frmPerson
 
     End Sub
 
+    Private Sub dgvPerson_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvPerson.CellContentClick
+
+    End Sub
+
+
+
+    Private Sub btnSearchAddresses_Click(sender As System.Object, e As System.EventArgs) Handles btnSearchAddresses.Click
+
+       
+    End Sub
 End Class
